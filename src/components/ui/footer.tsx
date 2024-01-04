@@ -85,7 +85,7 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                </div>`
+                </div>
                     <hr className="  border-gray-400 sm:mx-auto  "/>
                     <div className={'flex  justify-between gap-3 flex-wrap p-3  '}>
                         <p>Copyright © 2024 Zenith Market</p>
