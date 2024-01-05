@@ -1,27 +1,30 @@
 'use client'
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
+import logo from '@/assets/images/azeinthlogo.png'
 import { FiShoppingCart } from 'react-icons/fi';
 import { usePathname } from "next/navigation";
-
+import Image from 'next/image';
 const Navbar = () => {
     const pathname = usePathname()
     return (
         <>
             <nav className="p-4 flex items-center justify-between">
-                <div className="font-bold text-xl">A ZenithMarket</div>
+                <Link href={"/"}>
+                    <Image src={logo} alt="logo" className="w-40" />
+                </Link>
 
                 <div className="flex space-x-4">
-                    <Link href="/female" className={`hover:border-b-2 border-black ${pathname === '/female' ? 'border-b-2 border-black' : ''}`}>
+                    <Link href="/category/female" className={`hover:border-b-2 border-black ${pathname === '/category/female' ? 'border-b-2 border-black' : ''}`}>
                          Female
                     </Link>
-                    <Link href="/male" className={`hover:border-b-2 border-black ${pathname === '/male' ? 'border-b-2 border-black' : ''}`}>
+                    <Link href="/category/male" className={`hover:border-b-2 border-black ${pathname === '/category/male' ? 'border-b-2 border-black' : ''}`}>
                         Male
                     </Link>
-                    <Link href="/kids" className={`hover:border-b-2 border-black ${pathname === '/kids' ? 'border-b-2 border-black' : ''}`}>
+                    <Link href="/category/kids" className={`hover:border-b-2 border-black ${pathname === '/category/kids' ? 'border-b-2 border-black' : ''}`}>
                         Kids
                     </Link>
-                    <Link href="/products" className={`hover:border-b-2 border-black ${pathname === '/products' ? 'border-b-2 border-black' : ''}`}>
+                    <Link href="/category/products" className={`hover:border-b-2 border-black ${pathname === '/category/products' ? 'border-b-2 border-black' : ''}`}>
                         All Products
                     </Link>
                 </div>
