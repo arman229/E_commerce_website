@@ -1,7 +1,7 @@
 'use client'
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
-import logo from '@/assets/images/azeinthlogo.png'
+import logo from '@/assets/images/logonavbar.jpg'
 import { FiShoppingCart } from 'react-icons/fi';
 import { usePathname } from "next/navigation";
 import Image from 'next/image';
@@ -28,9 +28,9 @@ const Navbar = () => {
                         All Products
                     </Link>
                 </div>
-
-                <Input />
-
+<div className={'lg:block hidden'}>
+    <Input showSearchIcon />
+</div>
                 <div className="flex h-12">
                     <Link className={`relative items-center bg-gray-200 hover:bg-gray-300 p-3 mr-2 rounded-full ${pathname === '/addtocart' ? 'bg-gray-400' : ''}`} href={'/addtocart '}>
                         <FiShoppingCart size={24} />

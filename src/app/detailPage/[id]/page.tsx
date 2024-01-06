@@ -1,7 +1,14 @@
+import {FiShoppingCart} from "react-icons/fi";
 
+
+
+import { Button } from "@/components/ui/button"
 import Image from "next/image";
 import imagefromitemstore from '@/assets/images/girlimage.png'
 import {itemstore} from "@/components/data/itemstore";
+import {CustomBadge} from "@/components/ui/badge";
+import QuantityAddRemove from "@/components/ui/quantityAddRomove";
+
 const productDetail = (id: number) => {
     return (
         itemstore.filter((i) => i.id === id)
@@ -17,47 +24,48 @@ function DetailPage({ params }: { params: { id: string } }) {
 
             {filtered.map((item) => (
                 <div key={item.id} className={'p-4'}>
-                    <div className={'grid grid-cols-12'}>
-                        <div className={'col-span-1 flex flex-col'}>
+                    <div className={'grid grid-cols-12 gap-6'}>
+                        <div className={'lg:col-span-1 col-span-2 flex flex-col gap-4'}>
                             {item.images.map((img,index)=>(
                                 <Image key={index} src={img} alt="Product Image" className={'w-full'}    />
                             ))}
 
                         </div>
-                        <div className={'col-span-7'}>
+                        <div className={'lg:col-span-7 col-span-10 '}>
 
                             <Image src={item.images[0]} alt="Product Image" className={'w-full'} width={800} height={600} />
                         </div>
-                        <div className={'col-span-4'}>
-                            {/*<h1>{item.name} </h1>*/}
-                            {/*<h3>{item.category}</h3>*/}
-                            {/*<p>Select Size</p>*/}
+                        <div className={'lg:col-span-4 col-span-12'}>
 
 
-                            <div>
-                                <div>
-                                    <h1 className="text-2xl">{item.name}</h1>
-                                    <h2 className="text-base font-semibold text-gray-400">
-                                        {item.name}
+
+                            <div className={'      p-3  '}>
+                                     <h1 className="text-3xl ">{item.name}</h1>
+                                    <h2 className="text-2xl font-semibold text-gray-400">
+                                        {item.itemcategoryname}
                                     </h2>
-                                </div>
+
                                 <div>
-                                    <h3 className="mt-6 text-xs font-semibold">SELECT SIZE</h3>
-                                    {/* Sizes */}
-                                    <div className="flex gap-x-3">
+                                    <h3 className="mt-6 text-md font-bold">SELECT SIZE</h3>
 
+                                    <div className="flex gap-x-3 my-3">
+                                        < CustomBadge value={'XS'} />
+                                        < CustomBadge value={'S'}  />
+                                        < CustomBadge value={'M'}  />
+                                        < CustomBadge value={'L'}  />
+                                        < CustomBadge value={'XL'}  />
                                     </div>
-                                    {/* Quantity */}
                                     <div className="flex items-center mt-6 gap-x-3">
-                                        <h3 className="text-[10px] font-semibold">Quantity:</h3>
-
+                                        <h3 className="text-xl font-bold">Quantity:</h3>
+<QuantityAddRemove/>
                                     </div>
-                                    {/* Add to Cart */}
-                                    <div className="flex items-center mt-5 gap-x-4">
 
-                                        <h2 className="text-2xl font-bold">
-                                             ss
-                                        </h2>
+                                    <div className=" flex gap-3 my-8 items-center">
+                                        <Button className={'flex gap-x-2'}>     <FiShoppingCart size={20} />
+                                             Add to Cart
+                                        </Button>
+                                        <div className={'font-bold text-2xl'}>${item.price.toFixed(2)}</div>
+
                                     </div>
                                 </div>
                             </div>
@@ -94,6 +102,7 @@ function DetailPage({ params }: { params: { id: string } }) {
                     </div>
                 </div>
             ))}
+
         </>
     );
 };
