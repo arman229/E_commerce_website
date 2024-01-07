@@ -27,7 +27,7 @@ const Footer = () => {
                            <div  > <Image src={azeinth} className=" lg:h-30 md:h-24 lg:w-auto  h-16  w-32 h-full w-auto" alt="Flowbite Logo"/>
 
                                </div>
-                            <p>Small, artisan label that offers a thoughtfully curated collection of high quality
+                            <p className={'leading-7 text-lg my-4 [&:not(:first-child)]:mt-6'}> Small, artisan label that offers a thoughtfully curated collection of high quality
                                 everyday essentials made.</p>
                             <div className={'flex gap-2'}>
                                 <div style={customstyle}><FaTwitter/></div>
@@ -39,7 +39,7 @@ const Footer = () => {
                     <div
                         className="grid grid-cols-1 gap-8 sm:gap-6 sm:grid-cols-3  sm:col-span-7 lg:col-span-7  col-span-12 lg:col-start-7">
                         <div>
-                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">Company</h2>
+                            <h2 className="mb-6 text-sm font-bold text-gray-900 uppercase ">Company</h2>
                             <ul className="text-gray-600 ">
                                 <li className="mb-4">
                                     <Link href="/#" className="hover:underline">About</Link>
@@ -59,7 +59,7 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div>
-                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase  ">Support</h2>
+                            <h2 className="mb-6 text-sm font-bold text-gray-900 uppercase  ">Support</h2>
                             <ul className="text-gray-600 dark:text-gray-400">
                                 <li className="mb-4">
                                     <Link href="/#" className="hover:underline">Support Carrier </Link>
@@ -74,7 +74,7 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div>
-                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contact</h2>
+                            <h2 className="mb-6 text-sm font-bold text-gray-900 uppercase dark:text-white">Contact</h2>
                             <ul className="text-gray-600 dark:text-gray-400">
                                 <li className="mb-4">
                                     <Link href="/#" className="hover:underline">Whatsapp </Link>

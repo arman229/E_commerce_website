@@ -3,7 +3,7 @@ import {Input} from "@/components/ui/input"
 
 export function InputWithButton() {
     return (
-        <div className={'flex justify-center my-[8rem] border/'}>
+        <div className={'flex justify-center md:my-[8rem] mt-8 border/'}>
             <div>
 
 
@@ -15,7 +15,7 @@ export function InputWithButton() {
                     Get the latest information and promo offers directly
                 </p>
                 <div className="flex  items-center space-x-2 mt-4   ">
-                    <Input className={' w-4'} type="email" placeholder="Input email address" style={{padding: '18px'}}
+                    <Input  type="email" placeholder="Input email address" style={{padding: '18px',maxWidth:'350px'}}
                            showSearchIcon={false}/>
                     <Button type="submit">Get Started</Button>
                 </div>

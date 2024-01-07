@@ -25,7 +25,7 @@ export default function RootLayout({
 
           <Navbar/>
 
-          <div className={'flex-grow my-8 lg:px-8 md:px-4 px-1'}>{children}</div>
+          <div className={'flex-grow my-8 lg:px-8 md:px-4 px-4'}>{children}</div>
           <Footer/>
       </div>
       </body>

@@ -15,12 +15,12 @@ function CardComponent({item}) {
 
 
 
-            <div
-                className="  transform hover:scale-110 transition-transform duration-300 ease-in-out w-full max-w-[18rem] bg-white border border-gray-200 rounded-lg shadow   ">
+            <div data-aos="zoom-in"
+                className="  transform hover:scale-110 transition-transform duration-300 ease-in-out w-full max-w-[18rem] bg-white border border-gray-200 rounded-lg shadow    "  >
                 <Link href={`/detailPage/${item.id}`}  className={'border-black'} >
-                    <div className={'flex justify-center w-full '}>
+                    <div className={'flex justify-center  '}>
 
-                    <Image src={item.images[0]} alt="product" />
+                    <Image src={item.images[0]} alt="product" className={'w-full'} />
 
                 </div>
                 <div className="px-5 pb-5 leading-8">

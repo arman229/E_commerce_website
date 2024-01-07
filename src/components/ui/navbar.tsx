@@ -1,7 +1,7 @@
 'use client'
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
-import logo from '@/assets/images/logonavbar.jpg'
+import logo from '@/assets/images/mylogo.jpg'
 import { FiShoppingCart } from 'react-icons/fi';
 import { usePathname } from "next/navigation";
 import Image from 'next/image';
@@ -29,7 +29,7 @@ const Navbar = () => {
                     </Link>
                 </div>
 <div className={'lg:block hidden'}>
-    <Input showSearchIcon />
+    <Input  style={{width:'400px'}} showSearchIcon />
 </div>
                 <div className="flex h-12">
                     <Link className={`relative items-center bg-gray-200 hover:bg-gray-300 p-3 mr-2 rounded-full ${pathname === '/addtocart' ? 'bg-gray-400' : ''}`} href={'/addtocart '}>
