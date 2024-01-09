@@ -1,5 +1,8 @@
-
-const CustomBadge=({value})=>{
+import React from 'react';
+interface CustomBadgeProps {
+    value:string;
+}
+const CustomBadge:React.FC<CustomBadgeProps>=({value})=>{
     return(
         <>
             <button

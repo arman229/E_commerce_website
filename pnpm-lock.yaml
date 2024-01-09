@@ -55,6 +55,9 @@ dependencies:
     version: 1.0.7(tailwindcss@3.4.0)
 
 devDependencies:
+  '@types/aos':
+    specifier: ^3.0.7
+    version: 3.0.7
   '@types/node':
     specifier: ^20
     version: 20.10.6
@@ -1376,6 +1379,10 @@ packages:
     dependencies:
       '@types/estree': 1.0.5
     dev: false
+
+  /@types/aos@3.0.7:
+    resolution: {integrity: sha512-sEhyFqvKauUJZDbvAB3Pggynrq6g+2PS4XB3tmUr+mDL1gfDJnwslUC4QQ7/l8UD+LWpr3RxZVR/rHoZrLqZVg==}
+    dev: true
 
   /@types/debug@4.1.12:
     resolution: {integrity: sha512-vIChWdVG3LG1SMxEvI/AK+FWJthlrqlTu7fbrlywTkkaONwk/UAGaULXRlf8vkzFBLVm0zkMdCquhL5aOjhXPQ==}

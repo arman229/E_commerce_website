@@ -9,14 +9,14 @@ import f8 from '@/assets/images/f7.png'
 import m1 from '@/assets/images/m2.png'
 import m2 from '@/assets/images/m1.png'
 import f9 from '@/assets/images/f9.png'
-import image from '@/assets/images/girlimage.png'
-interface ItemStore {
+import { StaticImageData } from 'next/image';
+export interface ItemStore{
     id: number;
     name: string;
     category: string;
-    itemcategoryname:string;
+    itemcategoryname: string;
     price: number;
-    images: string[];
+    images: StaticImageData[];
     productDetails: string;
     productCare: string[];
 }
@@ -41,7 +41,7 @@ export const itemstore:ItemStore[]=[{
         'itemcategoryname':'Dress',
         "price": 545,
         "images": [f2,f2,f2,f2,f2],
-        "productDetails": "Elevate your style with our Cameryn Sash Tie Dress. This elegant dress is designed to make a statement at any event. Crafted with attention to detail, the dress features [specific features]. The timeless design and quality materials ensure both comfort and sophistication. [Additional details about the dress.]",
+        "productDetails": "Elevate your style with the Cameryn Sash Tie Dress. This elegant piece boasts a waist-accentuating sash tie, intricate lace detailing, and a breathable blend for comfort. Versatile and timeless, it's perfect for any occasion, seamlessly combining sophistication and style.",
         "productCare":  ["Hand wash using cold water.",
             "Do not using bleach.",
             "Hang it to dry.",

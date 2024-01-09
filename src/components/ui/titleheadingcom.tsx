@@ -1,4 +1,9 @@
-const Titleheadingcom=({cusheading,custext})=>{
+import React from 'react';
+interface TitleheadingcomProps{
+    cusheading:string;
+    custext:string;
+}
+const Titleheadingcom:React.FC<TitleheadingcomProps>=({cusheading,custext})=>{
     return(
         <div>
         <h1 className={'scroll-m-20 text-xl font-bold tracking-tight lg:text-2xl'} >{cusheading}</h1>

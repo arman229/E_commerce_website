@@ -1,7 +1,7 @@
 const AddToCart=()=>{
     return(
         <>
-this is AddToCart page
+          this is AddToCart page
         </>
     )
 }

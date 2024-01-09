@@ -5,8 +5,8 @@ import promotionimg1 from '@/assets/images/promotionsimg1.webp'
 import promotionimg2 from '@/assets/images/promotionsimg2.webp'
 import promotionimg3 from '@/assets/images/promotionsimg3.webp'
 import {PromotionCard} from "@/components/ui/promotioncard";
-
-const PromotionsEvents = () => {
+import React from 'react';
+const PromotionsEvents:React.FC = () => {
     return (
         <div className={'my-[8rem]'}>
             <p className="text-sm md:text-lg text-[#0000ff] text-center font-semibold">Promotions</p>
@@ -30,10 +30,10 @@ const PromotionsEvents = () => {
                 </div>
                 <div className={'flex   gap-2 flex-col sm:flex-row'}>
                 <div className={'w-full    sm:w-1/2   bg-[#efe1c7]'}>
-                    <PromotionCard name={'Flex Sweatshirt'} bgcolor={'#efe1c7'} fakeprice={'$100.00'} img={promotionimg2} originalprice={'75.00'}/>
+                    <PromotionCard name={'Flex Sweatshirt'}   fakeprice={'$100.00'} img={promotionimg2} originalprice={'75.00'}/>
                 </div>
                 <div className={'w-full  sm  sm:w-1/2 bg-[#d7d7d9]'}>
-                    <PromotionCard name={'Flex Push Button Bomber'} bgcolor={'#efe1c7'} fakeprice={'$225.00'} img={promotionimg3} originalprice={'190.00'}/>
+                    <PromotionCard name={'Flex Push Button Bomber'}  fakeprice={'$225.00'} img={promotionimg3} originalprice={'190.00'}/>
                 </div>
                 </div>
             </div>
