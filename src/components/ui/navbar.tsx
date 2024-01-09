@@ -25,7 +25,7 @@ const Navbar:React.FC = () => {
                     <Link href="/category/kids" className={`hover:border-b-2 border-black ${pathname === '/category/kids' ? 'border-b-2 border-black' : ''}`}>
                         Kids
                     </Link>
-                    <Link href="/category/sprots" className={`hover:border-b-2 border-black ${pathname === '/category/sports' ? 'border-b-2 border-black' : ''}`}>
+                    <Link href="/category/sports" className={`hover:border-b-2 border-black ${pathname === '/category/sports' ? 'border-b-2 border-black' : ''}`}>
                         Sports
                     </Link>
                     <Link href="/category/products" className={`hover:border-b-2 border-black ${pathname === '/category/products' ? 'border-b-2 border-black' : ''}`}>

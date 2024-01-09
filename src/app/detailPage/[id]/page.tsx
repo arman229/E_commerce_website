@@ -29,11 +29,11 @@ function DetailPage({params}: { params: { id: string } }) {
                     <div className={'grid grid-cols-12 gap-6'}>
                         <div className={'lg:col-span-1 col-span-2 flex flex-col gap-4'}>
                             {item.images.map((img, index) => (
-                                <Image key={index} src={img} alt="Product Image" className={'w-full'}/>
+                                <Image key={index} src={img} alt="Product Image" className={'w-full bg-[#d7d7d9]'}/>
                             ))}
                         </div>
                         <div className={'lg:col-span-7 col-span-10 '}>
-                            <Image src={item.images[0]} alt="Product Image" className={'w-full'} width={800} height={600}/>
+                            <Image src={item.images[0]} alt="Product Image" className={'w-full bg-[#d7d7d9]'} width={800} height={600}/>
                         </div>
                         <div className={'lg:col-span-4 col-span-12'}>
                             <div className={'      p-3  '}>
