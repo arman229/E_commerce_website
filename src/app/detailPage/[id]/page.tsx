@@ -12,13 +12,7 @@ const productDetail = (id: number) => {
     )
 }
 
-// const productDetail = (id: number) => {
-//     return (
-//         <>
-//             {  itemstore.filter((i) => i.id === id)}
-//         </>
-//     )
-// }
+
 function DetailPage({params}: { params: { id: string } }) {
     const id = parseInt(params.id, 10);
     const filtered = productDetail(id);
@@ -28,9 +22,15 @@ function DetailPage({params}: { params: { id: string } }) {
                 <div key={item.id} className={'p-4'}>
                     <div className={'grid grid-cols-12 gap-6'}>
                         <div className={'lg:col-span-1 col-span-2 flex flex-col gap-4'}>
-                            {item.images.map((img, index) => (
-                                <Image key={index} src={img} alt="Product Image" className={'w-full bg-[#d7d7d9]'}/>
-                            ))}
+                        {item.images.slice(-4).map((img, index) => (
+  <Image
+    key={index}
+    src={img}
+    alt="Product Image"
+    className={'w-full bg-[#d7d7d9]'}
+  />
+))}
+
                         </div>
                         <div className={'lg:col-span-7 col-span-10 '}>
                             <Image src={item.images[0]} alt="Product Image" className={'w-full bg-[#d7d7d9]'} width={800} height={600}/>

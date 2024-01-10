@@ -17,7 +17,7 @@ function CardComponent({item}:CardComponentProps) {
             AOS.init({duration: 1000,})
         }, []);
     return (
-        <div data-aos="zoom-in">
+        <div data-aos="zoom-in" className={'mx-auto'}>
             <div
                  className="     transform hover:scale-110 transition-transform duration-300 ease-in-out w-full max-w-[18rem] bg-white border border-gray-200 rounded-xl shadow    ">
                 <Link href={`/detailPage/${item.id}`} className={'border-black'}>

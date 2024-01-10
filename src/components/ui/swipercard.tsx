@@ -9,7 +9,7 @@ interface SwiperCardProps{
 const SwiperCard:React.FC<SwiperCardProps>=({item})=>{
     return (
 
-        <>
+        <div className={'mx-auto'}>
             <div
                 className="   transform hover:scale-110 transition-transform duration-300 ease-in-out w-full max-w-[22rem] bg-white border border-gray-200 rounded-lg shadow   ">
                 <Link href={`/detailPage/${item.id}`} className={'border-black'}>
@@ -22,7 +22,7 @@ const SwiperCard:React.FC<SwiperCardProps>=({item})=>{
                     </div>
                 </Link>
             </div>
-        </>
+        </div>
     );
 }
 
