@@ -10,18 +10,28 @@ import { Navbar} from 'flowbite-react';
 
 export const MyNavbar = () => {
     const pathname = usePathname()
-   
 
-    const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 770);
+
+    const [isSmallScreen, setIsSmallScreen] = useState(false);
 
     useEffect(() => {
-      const handleResize = () => {
-        setIsSmallScreen(window.innerWidth <= 770);
-      };
-      window.addEventListener('resize', handleResize);
-      return () => {
-        window.removeEventListener('resize', handleResize);
-      };
+
+        if (typeof window !== 'undefined') {
+            const handleResize = () => {
+                setIsSmallScreen(window.innerWidth <= 770);
+            };
+
+
+            handleResize();
+
+
+            window.addEventListener('resize', handleResize);
+
+
+            return () => {
+                window.removeEventListener('resize', handleResize);
+            };
+        }
     }, []);
     const hoverClass = isSmallScreen ? 'hover:bg-gray-300 py-2 px-1' : 'hover:border-b-2 border-black text-base ';
     
