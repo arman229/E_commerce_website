@@ -22,7 +22,7 @@ function CardComponent({item}:CardComponentProps) {
                  className="     transform hover:scale-110 transition-transform duration-300 ease-in-out w-full max-w-[18rem] bg-white border border-gray-200 rounded-xl shadow    ">
                 <Link href={`/detailPage/${item.id}`} className={'border-black'}>
                     <div className={'flex justify-center  bg-[#d7d7d9]'}>
-                        <Image src={item.images[0]} alt="product" className={'w-full   h-auto   '}/>
+                        <Image src={item.images[0]} alt="product" className={'w-full       '}/>
                     </div>
                     <div className="px-5 pb-5 leading-8">
                         <h5 className="text-xl font-semibold tracking-tight text-[#212121]  "> {item.name}</h5>
