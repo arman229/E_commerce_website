@@ -25,7 +25,7 @@ function CardComponent({item}:CardComponentProps) {
                         <Image src={item.images[0]} alt="product" className={'w-full       '}/>
                     </div>
                     <div className="px-5 pb-5 leading-8">
-                        <h5 className="text-xl font-semibold tracking-tight text-[#212121]  "> {item.name}</h5>
+                        <h5 className="text-xl font-semibold tracking-tight text-[#212121] pt-2  "> {item.name}</h5>
                         <div className="flex flex-col">
                             <span className="text-xl font-bold text-[#888888] leading-8 ">{item.itemcategoryname}</span>
                             <span className="text-2xl font-bold text-gray-900  leading-8">${item.price}</span>
