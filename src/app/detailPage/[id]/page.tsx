@@ -68,7 +68,7 @@ function DetailPage({params}: { params: { id: string } }) {
                                 <h1 className={'text-[#666] font-bold md:text-lg text-xl uppercase'}>product details </h1>
                             </div>
                             <div className={'md:col-span-9 col-span-12'}>
-                                <p className={'  md:text-md text-sx'}>{item.productDetails}</p>
+                                <p className={'  leading-7 text-md md:text-lg my-4 [&:not(:first-child)]:mt-6'}>{item.productDetails}</p>
                             </div>
                         </div>
                         <div className={'grid grid-cols-12 py-4 '}>
