@@ -16,7 +16,7 @@ Welcome to our E-Commerce Website! Explore a wide range of products and enjoy a 
 
 
 ## Demo
-Check out the live demo of the E-Commerce Website: [E-Commerce Website Demo]([https://lnkd.in/gsiu6e5W](https://my-shopping-website-assignment.vercel.app/))
+Check out the live demo of the E-Commerce Website: [E-Commerce Website Demo]([https://lnkd.in/gsiu6e5W](https://my-shopping-website-assignment.vercel.app/)
 
 ## Features
 - Responsive design for seamless browsing on all devices.
